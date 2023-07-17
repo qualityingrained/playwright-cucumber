@@ -1,0 +1,21 @@
+{
+  "name": "udemy-playwright-cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "C:/Users/jojanssens/tests/udemy-playwright-cucumber/node_modules/.bin/cucumber-js --require cucumber.js --require step-definitions/**/*.js -f json:cucumber_report.json --publish-quiet",
+    "report": "node reporter.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cucumber/cucumber": "^7.3.2",
+    "@playwright/test": "^1.35.1",
+    "chai": "^4.3.7",
+    "cucumber-html-reporter": "^6.0.0",
+    "playwright": "^1.35.1",
+    "prettier": "^3.0.0"
+  }
+}

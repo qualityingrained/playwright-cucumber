@@ -3,7 +3,7 @@ const { Before, After, BeforeAll, AfterAll, setDefaultTimeout} = require('@cucum
 
 BeforeAll(async () => {
     console.log('Launch browser')
-    global.browser = await playwright['chromium'].launch({headless: false, slowMo: 500})
+    global.browser = await playwright['chromium'].launch({headless: true, slowMo: 0})
 })
 
 AfterAll(async () =>{

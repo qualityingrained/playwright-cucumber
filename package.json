@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "C:/Users/jojanssens/tests/udemy-playwright-cucumber/node_modules/.bin/cucumber-js --require cucumber.js --require step-definitions/**/*.js -f json:cucumber_report.json --publish-quiet",
-    "report": "node reporter.js"
+    "report": "node reporter.js",
+    "jenkins-server": "java -jar jenkins.war --httpPort=8080 --enable-future-java"
   },
   "keywords": [],
   "author": "",

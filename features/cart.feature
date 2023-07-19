@@ -10,12 +10,26 @@ Feature: Cart
 
     Scenario: UI elements of cart items
         Given I am browsing the inventory
-        And I click on Add to Cart for product 1
+        And I click on Add to Cart for product "<name>"
         When I click on the cart
         Then I can see a qty, title, description, price and a remove button
+        
+        Examples:
+            | name |
+            | Sauce Labs Backpack |
 
     Scenario: Modify Qty of product in cart
         Given I am browsing the inventory
-        And I click on Add to Cart for product 1
+        And I click on Add to Cart for product "<name>"
         When I click on the cart
-        Then I can update the quantity of product 1
+        Then I can update the quantity of product "<name>"
+
+        Examples:
+            | name |
+            | Sauce Labs Backpack |
+
+    Scenario: Cart persists after logging out
+        Given I log out with a product in my cart
+        When I log back in
+        And navigate to the cart
+        Then that product is still in my cart

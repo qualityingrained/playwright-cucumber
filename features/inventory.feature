@@ -33,18 +33,18 @@ Feature: Inventory
 
     Scenario: Item can be bought from the inventory overview
         Given I am browsing the inventory
-        When I click on Add to Cart for product <number>
+        When I click on Add to Cart for product "<name>"
         Then I can see that product in my cart
 
         Examples:
-            | number |
-            | 2 |
+            | name |
+            | Sauce Labs Backpack |
 
     Scenario: Item cannot be added to the cart more than once
         Given I am browsing the inventory
-        When I click on Add to Cart for product <number>
-        Then I cannot add product <number> again
+        When I click on Add to Cart for product "<name>"
+        Then I cannot add product <name> again
 
         Examples:
-        | number |
-        | 1 |
+        | name |
+        | Sauce Labs Backpack |

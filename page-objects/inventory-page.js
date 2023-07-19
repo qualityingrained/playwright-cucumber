@@ -72,8 +72,9 @@ class InventoryPage {
         }
     }
 
-    async addProductToCart(productNumber, itemsAlreadyInCart) {
-        var product = await page.locator('div.inventory_item').nth(productNumber - 1)
+    async addProductToCart(productName, itemsAlreadyInCart) {
+        var productNumber = await this.findProductOnPage(productName, false)
+        var product = await page.locator('div.inventory_item').nth(productNumber)
         var productName = await product.locator('.inventory_item_name').innerText()
         
         // click on the CTA
@@ -82,16 +83,29 @@ class InventoryPage {
         // verify if added to the cart
         await expect(page.locator('.shopping_cart_badge')).toBeVisible()
         await expect(await page.locator('.shopping_cart_badge').innerText()).toBe('' + (itemsAlreadyInCart + 1))
-        return productName
     }
 
     async navigateToTheCart() {
         await page.locator('a.shopping_cart_link').click()
     }
 
-    async itemCannotBeAddedToCart (productNumber) {
-        var product = await page.locator('div.inventory_item').nth(productNumber - 1)
+    async itemCannotBeAddedToCart (productName) {
+        var productNumberOnPage = await this.findProductOnPage(productName, false)
+        var product = await page.locator('div.inventory_item').nth(productNumberOnPage)
         await expect(product.locator('button')).toHaveText('Remove')
+    }
+
+    // helper functions
+    async findProductOnPage(name, cssSelector) {
+        // find the specific product in the list of products
+        const allProductTitles = await page.locator('div.inventory_item_name').allInnerTexts()
+        var index = allProductTitles.findIndex(el => el == name)
+
+        // if cssSelector == true - we add one because CSS Selectors are 1-based
+        if (cssSelector) {
+            return (index + 1)
+        }
+        return index
     }
 }
 

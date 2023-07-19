@@ -4,16 +4,16 @@ class CartPage {
     }
 
     async assertEmptyCart() {
-        expect(await page.locator('button#continue-shopping')).toBeVisible()
-        expect(await page.locator('div.cart_item').count()).toEqual(0)
+        await expect(page.locator('button#continue-shopping')).toBeVisible()
+        await expect(page.locator('div.cart_item').count()).toEqual(0)
     }
 
     async assertProductUIElements() {
-        expect(await page.locator('div.cart_quantity')).toHaveText('1')
-        expect(await page.locator('div.inventory_item_name')).toBeVisible()
-        expect(await page.locator('div.inventory_item_desc')).toBeVisible()
-        expect(await page.locator('div.inventory_item_price')).toBeVisible()
-        expect(await page.getByText('Remove')).toBeVisible()
+        await expect(page.locator('div.cart_quantity')).toHaveText('1')
+        await expect(page.locator('div.inventory_item_name')).toBeVisible()
+        await expect(page.locator('div.inventory_item_desc')).toBeVisible()
+        await expect(page.locator('div.inventory_item_price')).toBeVisible()
+        await expect(page.getByText('Remove')).toBeVisible()
     }
 
     async updateQty(num) {

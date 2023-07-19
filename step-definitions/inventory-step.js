@@ -27,8 +27,9 @@ When('I sort the products based on price {string}', async function (sorting_opti
 })
 
 var itemAddedToCartName
-When('I click on Add to Cart for product {int}', async function(num) {
-    itemAddedToCartName = await inventoryPage.addProductToCart(num, 0)
+When('I click on Add to Cart for product {string}', async function(productName) {
+    itemAddedToCartName = productName
+    await inventoryPage.addProductToCart(productName, 0)
 })
 
 When ('I click on the cart', async function() {
@@ -53,6 +54,6 @@ Then ('I can see that product in my cart', async function() {
     await cartPage.assertItemInCart(itemAddedToCartName)
 })
 
-Then ('I cannot add product {int} again', async function(num) {
-    await inventoryPage.itemCannotBeAddedToCart(num)
+Then ('I cannot add product {string} again', async function(productName) {
+    await inventoryPage.itemCannotBeAddedToCart(productName)
 })

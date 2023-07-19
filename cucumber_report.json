@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 659000000
+              "duration": 180000000
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3404000000
+              "duration": 1623000000
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 8,
             "name": "I click on the cart",
             "match": {
-              "location": "step-definitions\\inventory-step.js:34"
+              "location": "step-definitions\\inventory-step.js:35"
             },
             "result": {
               "status": "passed",
-              "duration": 578000000
+              "duration": 38000000
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 9,
             "name": "I see that there are no items in my cart",
             "match": {
-              "location": "step-definitions\\cart-step.js:6"
+              "location": "step-definitions\\cart-step.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 90000000
+              "duration": 15000000
             }
           },
           {
@@ -61,7 +61,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 79000000
+              "duration": 13000000
             }
           }
         ],
@@ -80,7 +80,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 930000000
+              "duration": 114000000
             }
           },
           {
@@ -93,20 +93,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2916000000
+              "duration": 1397000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 13,
-            "name": "I click on Add to Cart for product 1",
+            "name": "I click on Add to Cart for product \"Sauce Labs Backpack\"",
             "match": {
               "location": "step-definitions\\inventory-step.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 593000000
+              "duration": 78000000
             }
           },
           {
@@ -115,11 +115,11 @@
             "line": 14,
             "name": "I click on the cart",
             "match": {
-              "location": "step-definitions\\inventory-step.js:34"
+              "location": "step-definitions\\inventory-step.js:35"
             },
             "result": {
               "status": "passed",
-              "duration": 563000000
+              "duration": 51000000
             }
           },
           {
@@ -128,11 +128,11 @@
             "line": 15,
             "name": "I can see a qty, title, description, price and a remove button",
             "match": {
-              "location": "step-definitions\\cart-step.js:10"
+              "location": "step-definitions\\cart-step.js:20"
             },
             "result": {
               "status": "passed",
-              "duration": 15000000
+              "duration": 20000000
             }
           },
           {
@@ -140,7 +140,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 48000000
+              "duration": 6000000
             }
           }
         ],
@@ -151,7 +151,7 @@
         "description": "",
         "id": "cart;modify-qty-of-product-in-cart",
         "keyword": "Scenario",
-        "line": 17,
+        "line": 21,
         "name": "Modify Qty of product in cart",
         "steps": [
           {
@@ -159,60 +159,60 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 635000000
+              "duration": 109000000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 18,
+            "line": 22,
             "name": "I am browsing the inventory",
             "match": {
               "location": "step-definitions\\inventory-step.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 2988000000
+              "duration": 1484000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 19,
-            "name": "I click on Add to Cart for product 1",
+            "line": 23,
+            "name": "I click on Add to Cart for product \"Sauce Labs Backpack\"",
             "match": {
               "location": "step-definitions\\inventory-step.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 594000000
+              "duration": 57000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 20,
+            "line": 24,
             "name": "I click on the cart",
             "match": {
-              "location": "step-definitions\\inventory-step.js:34"
+              "location": "step-definitions\\inventory-step.js:35"
             },
             "result": {
               "status": "passed",
-              "duration": 610000000
+              "duration": 54000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 21,
-            "name": "I can update the quantity of product 1",
+            "line": 25,
+            "name": "I can update the quantity of product \"Sauce Labs Backpack\"",
             "match": {
-              "location": "step-definitions\\cart-step.js:14"
+              "location": "step-definitions\\cart-step.js:24"
             },
             "result": {
               "status": "failed",
-              "duration": 6061000000,
-              "error_message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"2\"\u001b[39m\nReceived string: \u001b[31m\"1\"\u001b[39m\nCall log:\n  \u001b[2m- locator._expect with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.cart_quantity')\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\n    at Proxy.<anonymous> (C:\\Users\\jojanssens\\tests\\udemy-playwright-cucumber\\node_modules\\@playwright\\test\\lib\\matchers\\expect.js:165:37)\n    at CartPage.updateQty (C:\\Users\\jojanssens\\tests\\udemy-playwright-cucumber\\page-objects\\cart-page.js:23:57)\n    at World.<anonymous> (C:\\Users\\jojanssens\\tests\\udemy-playwright-cucumber\\step-definitions\\cart-step.js:15:5)"
+              "duration": 5033000000,
+              "error_message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"2\"\u001b[39m\nReceived string: \u001b[31m\"1\"\u001b[39m\nCall log:\n  \u001b[2m- locator._expect with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.cart_quantity')\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\n    at Proxy.<anonymous> (C:\\Users\\jojanssens\\tests\\playwright-cucumber\\node_modules\\@playwright\\test\\lib\\matchers\\expect.js:165:37)\n    at CartPage.updateQty (C:\\Users\\jojanssens\\tests\\playwright-cucumber\\page-objects\\cart-page.js:23:57)\n    at World.<anonymous> (C:\\Users\\jojanssens\\tests\\playwright-cucumber\\step-definitions\\cart-step.js:25:5)"
             }
           },
           {
@@ -220,7 +220,77 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 79000000
+              "duration": 8000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "cart;cart-persists-after-logging-out",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Cart persists after logging out",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 123000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 32,
+            "name": "I log out with a product in my cart",
+            "match": {
+              "location": "step-definitions\\cart-step.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1445000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "I log back in",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "navigate to the cart",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "that product is still in my cart",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6000000
             }
           }
         ],
@@ -250,7 +320,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 566000000
+              "duration": 105000000
             }
           },
           {
@@ -263,7 +333,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1324000000
+              "duration": 1234000000
             }
           },
           {
@@ -276,7 +346,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1850000000
+              "duration": 157000000
             }
           },
           {
@@ -285,7 +355,7 @@
             "line": 9,
             "name": "I can browse the inventory of products",
             "match": {
-              "location": "step-definitions\\inventory-step.js:42"
+              "location": "step-definitions\\inventory-step.js:43"
             },
             "result": {
               "status": "passed",
@@ -297,7 +367,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 41000000
+              "duration": 10000000
             }
           }
         ],
@@ -316,7 +386,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 748000000
+              "duration": 106000000
             }
           },
           {
@@ -329,7 +399,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3022000000
+              "duration": 1368000000
             }
           },
           {
@@ -342,7 +412,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -351,11 +421,11 @@
             "line": 14,
             "name": "I can see a title, picture, description, price and a buy button",
             "match": {
-              "location": "step-definitions\\inventory-step.js:38"
+              "location": "step-definitions\\inventory-step.js:39"
             },
             "result": {
               "status": "passed",
-              "duration": 54000000
+              "duration": 25000000
             }
           },
           {
@@ -363,7 +433,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 39000000
+              "duration": 6000000
             }
           }
         ],
@@ -382,7 +452,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 512000000
+              "duration": 103000000
             }
           },
           {
@@ -395,7 +465,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2988000000
+              "duration": 1381000000
             }
           },
           {
@@ -408,7 +478,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -417,11 +487,11 @@
             "line": 14,
             "name": "I can see a title, picture, description, price and a buy button",
             "match": {
-              "location": "step-definitions\\inventory-step.js:38"
+              "location": "step-definitions\\inventory-step.js:39"
             },
             "result": {
               "status": "passed",
-              "duration": 40000000
+              "duration": 27000000
             }
           },
           {
@@ -429,7 +499,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 36000000
+              "duration": 5000000
             }
           }
         ],
@@ -448,7 +518,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 527000000
+              "duration": 104000000
             }
           },
           {
@@ -461,7 +531,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3219000000
+              "duration": 1364000000
             }
           },
           {
@@ -474,7 +544,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -483,11 +553,11 @@
             "line": 14,
             "name": "I can see a title, picture, description, price and a buy button",
             "match": {
-              "location": "step-definitions\\inventory-step.js:38"
+              "location": "step-definitions\\inventory-step.js:39"
             },
             "result": {
               "status": "passed",
-              "duration": 82000000
+              "duration": 28000000
             }
           },
           {
@@ -495,7 +565,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 37000000
+              "duration": 6000000
             }
           }
         ],
@@ -514,7 +584,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 601000000
+              "duration": 107000000
             }
           },
           {
@@ -527,7 +597,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2997000000
+              "duration": 1400000000
             }
           },
           {
@@ -540,7 +610,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 549000000
+              "duration": 21000000
             }
           },
           {
@@ -549,11 +619,11 @@
             "line": 25,
             "name": "I can see the products sorted based on the price \"lohi\"",
             "match": {
-              "location": "step-definitions\\inventory-step.js:46"
+              "location": "step-definitions\\inventory-step.js:47"
             },
             "result": {
               "status": "passed",
-              "duration": 42000000
+              "duration": 14000000
             }
           },
           {
@@ -561,7 +631,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 38000000
+              "duration": 9000000
             }
           }
         ],
@@ -580,7 +650,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 555000000
+              "duration": 106000000
             }
           },
           {
@@ -593,7 +663,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2927000000
+              "duration": 1402000000
             }
           },
           {
@@ -606,7 +676,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 548000000
+              "duration": 22000000
             }
           },
           {
@@ -615,11 +685,11 @@
             "line": 25,
             "name": "I can see the products sorted based on the price \"hilo\"",
             "match": {
-              "location": "step-definitions\\inventory-step.js:46"
+              "location": "step-definitions\\inventory-step.js:47"
             },
             "result": {
               "status": "passed",
-              "duration": 41000000
+              "duration": 14000000
             }
           },
           {
@@ -627,7 +697,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 38000000
+              "duration": 10000000
             }
           }
         ],
@@ -646,7 +716,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 514000000
+              "duration": 105000000
             }
           },
           {
@@ -659,7 +729,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3019000000
+              "duration": 1478000000
             }
           },
           {
@@ -672,7 +742,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 531000000
+              "duration": 27000000
             }
           },
           {
@@ -681,11 +751,11 @@
             "line": 25,
             "name": "I can see the products sorted based on the price \"az\"",
             "match": {
-              "location": "step-definitions\\inventory-step.js:46"
+              "location": "step-definitions\\inventory-step.js:47"
             },
             "result": {
               "status": "passed",
-              "duration": 29000000
+              "duration": 13000000
             }
           },
           {
@@ -693,7 +763,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 38000000
+              "duration": 7000000
             }
           }
         ],
@@ -712,7 +782,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 604000000
+              "duration": 110000000
             }
           },
           {
@@ -725,7 +795,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2989000000
+              "duration": 1361000000
             }
           },
           {
@@ -738,7 +808,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 532000000
+              "duration": 28000000
             }
           },
           {
@@ -747,11 +817,11 @@
             "line": 25,
             "name": "I can see the products sorted based on the price \"za\"",
             "match": {
-              "location": "step-definitions\\inventory-step.js:46"
+              "location": "step-definitions\\inventory-step.js:47"
             },
             "result": {
               "status": "passed",
-              "duration": 41000000
+              "duration": 15000000
             }
           },
           {
@@ -759,7 +829,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 66000000
+              "duration": 4000000
             }
           }
         ],
@@ -778,7 +848,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 452000000
+              "duration": 112000000
             }
           },
           {
@@ -791,20 +861,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3142000000
+              "duration": 1388000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 36,
-            "name": "I click on Add to Cart for product 2",
+            "name": "I click on Add to Cart for product \"Sauce Labs Backpack\"",
             "match": {
               "location": "step-definitions\\inventory-step.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 595000000
+              "duration": 47000000
             }
           },
           {
@@ -813,11 +883,11 @@
             "line": 37,
             "name": "I can see that product in my cart",
             "match": {
-              "location": "step-definitions\\inventory-step.js:51"
+              "location": "step-definitions\\inventory-step.js:52"
             },
             "result": {
               "status": "passed",
-              "duration": 575000000
+              "duration": 56000000
             }
           },
           {
@@ -825,7 +895,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 63000000
+              "duration": 5000000
             }
           }
         ],
@@ -844,7 +914,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 540000000
+              "duration": 104000000
             }
           },
           {
@@ -857,33 +927,30 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3236000000
+              "duration": 1428000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 45,
-            "name": "I click on Add to Cart for product 1",
+            "name": "I click on Add to Cart for product \"Sauce Labs Backpack\"",
             "match": {
               "location": "step-definitions\\inventory-step.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 611000000
+              "duration": 49000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 46,
-            "name": "I cannot add product 1 again",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:56"
-            },
+            "name": "I cannot add product Sauce Labs Backpack again",
             "result": {
-              "status": "passed",
-              "duration": 9000000
+              "status": "undefined",
+              "duration": 0
             }
           },
           {
@@ -891,7 +958,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 54000000
+              "duration": 5000000
             }
           }
         ],
@@ -921,7 +988,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 463000000
+              "duration": 107000000
             }
           },
           {
@@ -934,7 +1001,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1341000000
+              "duration": 1205000000
             }
           },
           {
@@ -947,7 +1014,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1812000000
+              "duration": 194000000
             }
           },
           {
@@ -960,7 +1027,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 31000000
+              "duration": 10000000
             }
           },
           {
@@ -968,7 +1035,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 78000000
+              "duration": 16000000
             }
           }
         ],
@@ -987,7 +1054,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 549000000
+              "duration": 122000000
             }
           },
           {
@@ -1000,7 +1067,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1353000000
+              "duration": 1341000000
             }
           },
           {
@@ -1013,7 +1080,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1748000000
+              "duration": 136000000
             }
           },
           {
@@ -1026,7 +1093,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 4000000
             }
           },
           {
@@ -1034,7 +1101,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 40000000
+              "duration": 5000000
             }
           }
         ],
@@ -1053,7 +1120,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 629000000
+              "duration": 110000000
             }
           },
           {
@@ -1066,7 +1133,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1273000000
+              "duration": 1231000000
             }
           },
           {
@@ -1079,7 +1146,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1714000000
+              "duration": 119000000
             }
           },
           {
@@ -1092,7 +1159,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 3000000
             }
           },
           {
@@ -1100,7 +1167,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 38000000
+              "duration": 8000000
             }
           }
         ],
@@ -1119,7 +1186,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 473000000
+              "duration": 114000000
             }
           },
           {
@@ -1132,7 +1199,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1227000000
+              "duration": 1237000000
             }
           },
           {
@@ -1145,7 +1212,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1682000000
+              "duration": 131000000
             }
           },
           {
@@ -1158,7 +1225,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 3000000
             }
           },
           {
@@ -1166,7 +1233,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 50000000
+              "duration": 4000000
             }
           }
         ],
@@ -1185,7 +1252,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 613000000
+              "duration": 117000000
             }
           },
           {
@@ -1198,7 +1265,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1411000000
+              "duration": 1265000000
             }
           },
           {
@@ -1211,7 +1278,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1797000000
+              "duration": 130000000
             }
           },
           {
@@ -1224,7 +1291,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 4000000
             }
           },
           {
@@ -1232,7 +1299,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 37000000
+              "duration": 9000000
             }
           }
         ],

@@ -2,5 +2,4 @@
 *.dll
 node_modules/
 .vscode
-reports/
 jenkins.war

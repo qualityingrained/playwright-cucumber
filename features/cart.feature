@@ -29,7 +29,11 @@ Feature: Cart
             | Sauce Labs Backpack |
 
     Scenario: Cart persists after logging out
-        Given I log out with a product in my cart
-        When I log back in
-        And navigate to the cart
-        Then that product is still in my cart
+        Given I log out with "<productName>" in my cart
+        When I log in
+        And I click on the cart
+        Then "<productName>" product is in my cart
+
+        Examples:
+            | productName |
+            | Sauce Labs Backpack |

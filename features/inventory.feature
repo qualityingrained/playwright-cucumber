@@ -43,7 +43,7 @@ Feature: Inventory
     Scenario: Item cannot be added to the cart more than once
         Given I am browsing the inventory
         When I click on Add to Cart for product "<name>"
-        Then I cannot add product <name> again
+        Then I cannot add product "<name>" again
 
         Examples:
         | name |

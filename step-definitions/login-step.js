@@ -9,6 +9,11 @@ Given('I visit a login page', async function () {
     await loginPage.navigateToLoginPage()
 })
 
+When('I log in', async function() {
+    await loginPage.navigateToLoginPage()
+    await loginPage.submitLoginForm('standard_user', 'secret_sauce')
+})
+
 When('I fill the login form with valid credentials', async function () {
     await loginPage.submitLoginForm('standard_user', 'secret_sauce')
 })

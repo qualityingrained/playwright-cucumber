@@ -5,7 +5,7 @@ class CartPage {
 
     async assertEmptyCart() {
         await expect(page.locator('button#continue-shopping')).toBeVisible()
-        await expect(page.locator('div.cart_item').count()).toEqual(0)
+        expect(await page.locator('div.cart_item').count()).toEqual(0)
     }
 
     async assertProductUIElements() {

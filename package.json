@@ -1,24 +1,24 @@
 {
-  "name": "udemy-playwright-cucumber",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "C:/Users/jojanssens/tests/playwright-cucumber/node_modules/.bin/cucumber-js --require cucumber.js --require step-definitions/**/*.js -f json:cucumber_report.json --publish-quiet",
-    "test:github": "../node_modules/.bin/cucumber-js --require cucumber.js --require step-definitions/**/*.js -f json:cucumber_report.json --publish-quiet",
-    "test:jenkins": "C:/Users/jojanssens/.jenkins/workspace/Playwright-Cucumber/node_modules/.bin/cucumber-js --require cucumber.js --require step-definitions/**/*.js -f json:cucumber_report.json --publish-quiet",
-    "report": "node reporter.js",
-    "jenkins-server": "java -jar jenkins.war --httpPort=8080 --enable-future-java"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@cucumber/cucumber": "^7.3.2",
-    "@playwright/test": "^1.35.1",
-    "chai": "^4.3.7",
-    "cucumber-html-reporter": "^6.0.0",
-    "playwright": "^1.35.1",
-    "prettier": "^3.0.0"
-  }
+	"name": "udemy-playwright-cucumber",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "C:/Users/jojanssens/tests/playwright-cucumber/node_modules/.bin/cucumber-js --require cucumber.js --require step-definitions/**/*.js -f json:cucumber_report.json --publish-quiet",
+		"test:github": "/node_modules/.bin/cucumber-js --require cucumber.js --require step-definitions/**/*.js -f json:cucumber_report.json --publish-quiet",
+		"test:jenkins": "C:/Users/jojanssens/.jenkins/workspace/Playwright-Cucumber/node_modules/.bin/cucumber-js --require cucumber.js --require step-definitions/**/*.js -f json:cucumber_report.json --publish-quiet",
+		"report": "node reporter.js",
+		"jenkins-server": "java -jar jenkins.war --httpPort=8080 --enable-future-java"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@cucumber/cucumber": "^7.3.2",
+		"@playwright/test": "^1.35.1",
+		"chai": "^4.3.7",
+		"cucumber-html-reporter": "^6.0.0",
+		"playwright": "^1.35.1",
+		"prettier": "^3.0.0"
+	}
 }

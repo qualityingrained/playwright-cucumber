@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "C:/Users/jojanssens/tests/playwright-cucumber/node_modules/.bin/cucumber-js --require cucumber.js --require step-definitions/**/*.js -f json:cucumber_report.json --publish-quiet",
-		"test:github": "/node_modules/.bin/cucumber-js --require cucumber.js --require step-definitions/**/*.js -f json:cucumber_report.json --publish-quiet",
+		"test:github": "./node_modules/.bin/cucumber-js --require cucumber.js --require step-definitions/**/*.js -f json:cucumber_report.json --publish-quiet",
 		"test:jenkins": "C:/Users/jojanssens/.jenkins/workspace/Playwright-Cucumber/node_modules/.bin/cucumber-js --require cucumber.js --require step-definitions/**/*.js -f json:cucumber_report.json --publish-quiet",
 		"report": "node reporter.js",
 		"jenkins-server": "java -jar jenkins.war --httpPort=8080 --enable-future-java"

@@ -17,13 +17,14 @@ jobs:
            run: npm ci
          - name: Install Playwright Browsers
            run: npx playwright install --with-deps
-         - name: Display directory
-           run: ls -l
          - name: Run tests
            run: npm run test:github
+         - name: Display directory
+           run: ls -l
          - uses: actions/upload-artifact@v3
            if: always()
            with:
-              name: cucumber_report.html
-              path: reports/
+              name: cucumber_report
+              path: ./reports/
               retention-days: 30
+              if-no-files-found: warn

@@ -1,1329 +1,1329 @@
 [
-  {
-    "description": "    As a logged in user \n    I have an overview of the items currently in my cart, which I can edit",
-    "elements": [
-      {
-        "description": "",
-        "id": "cart;empty-cart",
-        "keyword": "Scenario",
-        "line": 6,
-        "name": "Empty cart",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 162000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "I am browsing the inventory",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 708000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "I click on the cart",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:35"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 57000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "I see that there are no items in my cart",
-            "match": {
-              "location": "step-definitions\\cart-step.js:20"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 18000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 12000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "cart;ui-elements-of-cart-items",
-        "keyword": "Scenario",
-        "line": 11,
-        "name": "UI elements of cart items",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 127000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 12,
-            "name": "I am browsing the inventory",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 649000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "I click on Add to Cart for product \"Sauce Labs Backpack\"",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:30"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 70000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 14,
-            "name": "I click on the cart",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:35"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 58000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 15,
-            "name": "I can see a qty, title, description, price and a remove button",
-            "match": {
-              "location": "step-definitions\\cart-step.js:24"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 21000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 7000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "cart;modify-qty-of-product-in-cart",
-        "keyword": "Scenario",
-        "line": 21,
-        "name": "Modify Qty of product in cart",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 112000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 22,
-            "name": "I am browsing the inventory",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 649000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 23,
-            "name": "I click on Add to Cart for product \"Sauce Labs Backpack\"",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:30"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 64000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 24,
-            "name": "I click on the cart",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:35"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 56000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 25,
-            "name": "I can update the quantity of product \"Sauce Labs Backpack\"",
-            "match": {
-              "location": "step-definitions\\cart-step.js:28"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 5030000000,
-              "error_message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"2\"\u001b[39m\nReceived string: \u001b[31m\"1\"\u001b[39m\nCall log:\n  \u001b[2m- locator._expect with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.cart_quantity')\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\n    at Proxy.<anonymous> (C:\\Users\\jojanssens\\tests\\playwright-cucumber\\node_modules\\@playwright\\test\\lib\\matchers\\expect.js:165:37)\n    at CartPage.updateQty (C:\\Users\\jojanssens\\tests\\playwright-cucumber\\page-objects\\cart-page.js:23:57)\n    at World.<anonymous> (C:\\Users\\jojanssens\\tests\\playwright-cucumber\\step-definitions\\cart-step.js:29:5)"
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 9000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "cart;cart-persists-after-logging-out",
-        "keyword": "Scenario",
-        "line": 31,
-        "name": "Cart persists after logging out",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 122000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 32,
-            "name": "I log out with \"Sauce Labs Backpack\" in my cart",
-            "match": {
-              "location": "step-definitions\\cart-step.js:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1297000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 33,
-            "name": "I log in",
-            "match": {
-              "location": "step-definitions\\login-step.js:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 180000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 34,
-            "name": "I click on the cart",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:35"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 58000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 35,
-            "name": "\"Sauce Labs Backpack\" product is in my cart",
-            "match": {
-              "location": "step-definitions\\cart-step.js:33"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 7000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "cart",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Cart",
-    "tags": [],
-    "uri": "features\\cart.feature"
-  },
-  {
-    "description": "    As a logged in user\n    I want to browse the different products in the inventory",
-    "elements": [
-      {
-        "description": "",
-        "id": "inventory;browse-displayed-products",
-        "keyword": "Scenario",
-        "line": 6,
-        "name": "Browse displayed products",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 136000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "I visit a login page",
-            "match": {
-              "location": "step-definitions\\login-step.js:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 509000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "I fill the login form with valid credentials",
-            "match": {
-              "location": "step-definitions\\login-step.js:17"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 193000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "I can browse the inventory of products",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:43"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 8000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "inventory;a-product-contains-a-number-of-elements",
-        "keyword": "Scenario",
-        "line": 11,
-        "name": "A product contains a number of elements",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 114000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 12,
-            "name": "I am browsing the inventory",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 630000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 13,
-            "name": "I look at product number 1",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:20"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "I can see a title, picture, description, price and a buy button",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:39"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 29000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 6000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "inventory;a-product-contains-a-number-of-elements",
-        "keyword": "Scenario",
-        "line": 11,
-        "name": "A product contains a number of elements",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 118000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 12,
-            "name": "I am browsing the inventory",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 638000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 13,
-            "name": "I look at product number 2",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:20"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "I can see a title, picture, description, price and a buy button",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:39"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 30000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 8000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "inventory;a-product-contains-a-number-of-elements",
-        "keyword": "Scenario",
-        "line": 11,
-        "name": "A product contains a number of elements",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 120000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 12,
-            "name": "I am browsing the inventory",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 675000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 13,
-            "name": "I look at product number 3",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:20"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "I can see a title, picture, description, price and a buy button",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:39"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 30000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 7000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "inventory;the-inventory-can-be-sorted",
-        "keyword": "Scenario",
-        "line": 22,
-        "name": "The inventory can be sorted",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 128000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 23,
-            "name": "I am browsing the inventory",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 628000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 24,
-            "name": "I sort the products based on price \"lohi\"",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 23000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 25,
-            "name": "I can see the products sorted based on the price \"lohi\"",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:47"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 17000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 8000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "inventory;the-inventory-can-be-sorted",
-        "keyword": "Scenario",
-        "line": 22,
-        "name": "The inventory can be sorted",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 123000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 23,
-            "name": "I am browsing the inventory",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 679000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 24,
-            "name": "I sort the products based on price \"hilo\"",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 23000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 25,
-            "name": "I can see the products sorted based on the price \"hilo\"",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:47"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 20000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 9000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "inventory;the-inventory-can-be-sorted",
-        "keyword": "Scenario",
-        "line": 22,
-        "name": "The inventory can be sorted",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 113000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 23,
-            "name": "I am browsing the inventory",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 642000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 24,
-            "name": "I sort the products based on price \"az\"",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 25000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 25,
-            "name": "I can see the products sorted based on the price \"az\"",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:47"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 19000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 7000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "inventory;the-inventory-can-be-sorted",
-        "keyword": "Scenario",
-        "line": 22,
-        "name": "The inventory can be sorted",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 109000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 23,
-            "name": "I am browsing the inventory",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 663000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 24,
-            "name": "I sort the products based on price \"za\"",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 22000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 25,
-            "name": "I can see the products sorted based on the price \"za\"",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:47"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 15000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 8000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "inventory;item-can-be-bought-from-the-inventory-overview",
-        "keyword": "Scenario",
-        "line": 34,
-        "name": "Item can be bought from the inventory overview",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 110000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 35,
-            "name": "I am browsing the inventory",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 673000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 36,
-            "name": "I click on Add to Cart for product \"Sauce Labs Backpack\"",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:30"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 60000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 37,
-            "name": "I can see that product in my cart",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:52"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 60000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 6000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "inventory;item-cannot-be-added-to-the-cart-more-than-once",
-        "keyword": "Scenario",
-        "line": 43,
-        "name": "Item cannot be added to the cart more than once",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 114000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 44,
-            "name": "I am browsing the inventory",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 637000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 45,
-            "name": "I click on Add to Cart for product \"Sauce Labs Backpack\"",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:30"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 77000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 46,
-            "name": "I cannot add product \"Sauce Labs Backpack\" again",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:57"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 9000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 5000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "inventory",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Inventory",
-    "tags": [],
-    "uri": "features\\inventory.feature"
-  },
-  {
-    "description": "    As a user\n    I want to login into application",
-    "elements": [
-      {
-        "description": "",
-        "id": "login;login-with-valid-credentials",
-        "keyword": "Scenario",
-        "line": 6,
-        "name": "Login with valid credentials",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 117000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "I visit a login page",
-            "match": {
-              "location": "step-definitions\\login-step.js:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 475000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "I fill the login form with valid credentials",
-            "match": {
-              "location": "step-definitions\\login-step.js:17"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 194000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "I should see the home page",
-            "match": {
-              "location": "step-definitions\\login-step.js:29"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 13000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 16000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "login;attempt-login-with-a-locked-out-user",
-        "keyword": "Scenario",
-        "line": 11,
-        "name": "Attempt login with a locked out user",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 120000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 12,
-            "name": "I visit a login page",
-            "match": {
-              "location": "step-definitions\\login-step.js:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 476000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 13,
-            "name": "I fill the login form with a locked-out user",
-            "match": {
-              "location": "step-definitions\\login-step.js:21"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 141000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "I should see a locked-out error message",
-            "match": {
-              "location": "step-definitions\\login-step.js:37"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 10000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "login;try-to-login-with-invalid-credentials",
-        "keyword": "Scenario",
-        "line": 16,
-        "name": "Try to login with invalid credentials",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 119000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 17,
-            "name": "I visit a login page",
-            "match": {
-              "location": "step-definitions\\login-step.js:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 443000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 18,
-            "name": "I fill the login form with \"user\" and \"secret_sauce\"",
-            "match": {
-              "location": "step-definitions\\login-step.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 128000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 19,
-            "name": "I should see an invalid credentials error message",
-            "match": {
-              "location": "step-definitions\\login-step.js:33"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 9000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "login;try-to-login-with-invalid-credentials",
-        "keyword": "Scenario",
-        "line": 16,
-        "name": "Try to login with invalid credentials",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 109000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 17,
-            "name": "I visit a login page",
-            "match": {
-              "location": "step-definitions\\login-step.js:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 495000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 18,
-            "name": "I fill the login form with \"standard_user\" and \"psst\"",
-            "match": {
-              "location": "step-definitions\\login-step.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 143000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 19,
-            "name": "I should see an invalid credentials error message",
-            "match": {
-              "location": "step-definitions\\login-step.js:33"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 8000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "login;try-to-login-with-invalid-credentials",
-        "keyword": "Scenario",
-        "line": 16,
-        "name": "Try to login with invalid credentials",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 104000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 17,
-            "name": "I visit a login page",
-            "match": {
-              "location": "step-definitions\\login-step.js:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 480000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 18,
-            "name": "I fill the login form with \"fjklqfjq\" and \"jfkldqjfqdl\"",
-            "match": {
-              "location": "step-definitions\\login-step.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 123000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 19,
-            "name": "I should see an invalid credentials error message",
-            "match": {
-              "location": "step-definitions\\login-step.js:33"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 8000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "login",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Login",
-    "tags": [],
-    "uri": "features\\login.feature"
-  }
+	{
+		"description": "    As a logged in user \n    I have an overview of the items currently in my cart, which I can edit",
+		"elements": [
+			{
+				"description": "",
+				"id": "cart;empty-cart",
+				"keyword": "Scenario",
+				"line": 6,
+				"name": "Empty cart",
+				"steps": [
+					{
+						"keyword": "Before",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 531000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Given ",
+						"line": 7,
+						"name": "I am browsing the inventory",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:10"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 1957000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "When ",
+						"line": 8,
+						"name": "I click on the cart",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:41"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 65000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Then ",
+						"line": 9,
+						"name": "I see that there are no items in my cart",
+						"match": {
+							"location": "step-definitions\\cart-step.js:20"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 44000000
+						}
+					},
+					{
+						"keyword": "After",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 64000000
+						}
+					}
+				],
+				"tags": [],
+				"type": "scenario"
+			},
+			{
+				"description": "",
+				"id": "cart;ui-elements-of-cart-items",
+				"keyword": "Scenario",
+				"line": 11,
+				"name": "UI elements of cart items",
+				"steps": [
+					{
+						"keyword": "Before",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 392000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Given ",
+						"line": 12,
+						"name": "I am browsing the inventory",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:10"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 1448000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "And ",
+						"line": 13,
+						"name": "I click on Add to Cart for product \"Sauce Labs Backpack\"",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:33"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 107000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "When ",
+						"line": 14,
+						"name": "I click on the cart",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:41"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 42000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Then ",
+						"line": 15,
+						"name": "I can see a qty, title, description, price and a remove button",
+						"match": {
+							"location": "step-definitions\\cart-step.js:24"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 29000000
+						}
+					},
+					{
+						"keyword": "After",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 45000000
+						}
+					}
+				],
+				"tags": [],
+				"type": "scenario"
+			},
+			{
+				"description": "",
+				"id": "cart;modify-qty-of-product-in-cart",
+				"keyword": "Scenario",
+				"line": 21,
+				"name": "Modify Qty of product in cart",
+				"steps": [
+					{
+						"keyword": "Before",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 400000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Given ",
+						"line": 22,
+						"name": "I am browsing the inventory",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:10"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 1474000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "And ",
+						"line": 23,
+						"name": "I click on Add to Cart for product \"Sauce Labs Backpack\"",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:33"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 78000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "When ",
+						"line": 24,
+						"name": "I click on the cart",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:41"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 64000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Then ",
+						"line": 25,
+						"name": "I can update the quantity of product \"Sauce Labs Backpack\"",
+						"match": {
+							"location": "step-definitions\\cart-step.js:31"
+						},
+						"result": {
+							"status": "failed",
+							"duration": 5038000000,
+							"error_message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"2\"\u001b[39m\nReceived string: \u001b[31m\"1\"\u001b[39m\nCall log:\n  \u001b[2m- locator._expect with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.cart_quantity')\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\n    at Proxy.<anonymous> (C:\\Users\\jojanssens\\tests\\playwright-cucumber\\node_modules\\@playwright\\test\\lib\\matchers\\expect.js:165:37)\n    at CartPage.updateQty (C:\\Users\\jojanssens\\tests\\playwright-cucumber\\page-objects\\cart-page.js:25:51)\n    at World.<anonymous> (C:\\Users\\jojanssens\\tests\\playwright-cucumber\\step-definitions\\cart-step.js:32:2)"
+						}
+					},
+					{
+						"keyword": "After",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 46000000
+						}
+					}
+				],
+				"tags": [],
+				"type": "scenario"
+			},
+			{
+				"description": "",
+				"id": "cart;cart-persists-after-logging-out",
+				"keyword": "Scenario",
+				"line": 31,
+				"name": "Cart persists after logging out",
+				"steps": [
+					{
+						"keyword": "Before",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 496000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Given ",
+						"line": 32,
+						"name": "I log out with \"Sauce Labs Backpack\" in my cart",
+						"match": {
+							"location": "step-definitions\\cart-step.js:12"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 2141000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "When ",
+						"line": 33,
+						"name": "I log in",
+						"match": {
+							"location": "step-definitions\\login-step.js:11"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 286000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "And ",
+						"line": 34,
+						"name": "I click on the cart",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:41"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 131000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Then ",
+						"line": 35,
+						"name": "\"Sauce Labs Backpack\" product is in my cart",
+						"match": {
+							"location": "step-definitions\\cart-step.js:35"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 8000000
+						}
+					},
+					{
+						"keyword": "After",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 69000000
+						}
+					}
+				],
+				"tags": [],
+				"type": "scenario"
+			}
+		],
+		"id": "cart",
+		"line": 1,
+		"keyword": "Feature",
+		"name": "Cart",
+		"tags": [],
+		"uri": "features\\cart.feature"
+	},
+	{
+		"description": "    As a logged in user\n    I want to browse the different products in the inventory",
+		"elements": [
+			{
+				"description": "",
+				"id": "inventory;browse-displayed-products",
+				"keyword": "Scenario",
+				"line": 6,
+				"name": "Browse displayed products",
+				"steps": [
+					{
+						"keyword": "Before",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 858000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Given ",
+						"line": 7,
+						"name": "I visit a login page",
+						"match": {
+							"location": "step-definitions\\login-step.js:6"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 1319000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "When ",
+						"line": 8,
+						"name": "I fill the login form with valid credentials",
+						"match": {
+							"location": "step-definitions\\login-step.js:16"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 266000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Then ",
+						"line": 9,
+						"name": "I can browse the inventory of products",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:54"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 1000000
+						}
+					},
+					{
+						"keyword": "After",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 51000000
+						}
+					}
+				],
+				"tags": [],
+				"type": "scenario"
+			},
+			{
+				"description": "",
+				"id": "inventory;a-product-contains-a-number-of-elements",
+				"keyword": "Scenario",
+				"line": 11,
+				"name": "A product contains a number of elements",
+				"steps": [
+					{
+						"keyword": "Before",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 446000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Given ",
+						"line": 12,
+						"name": "I am browsing the inventory",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:10"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 1432000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "When ",
+						"line": 13,
+						"name": "I look at product number 1",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:20"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 1000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Then ",
+						"line": 14,
+						"name": "I can see a title, picture, description, price and a buy button",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:45"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 49000000
+						}
+					},
+					{
+						"keyword": "After",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 47000000
+						}
+					}
+				],
+				"tags": [],
+				"type": "scenario"
+			},
+			{
+				"description": "",
+				"id": "inventory;a-product-contains-a-number-of-elements",
+				"keyword": "Scenario",
+				"line": 11,
+				"name": "A product contains a number of elements",
+				"steps": [
+					{
+						"keyword": "Before",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 418000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Given ",
+						"line": 12,
+						"name": "I am browsing the inventory",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:10"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 1404000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "When ",
+						"line": 13,
+						"name": "I look at product number 2",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:20"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 1000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Then ",
+						"line": 14,
+						"name": "I can see a title, picture, description, price and a buy button",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:45"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 47000000
+						}
+					},
+					{
+						"keyword": "After",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 50000000
+						}
+					}
+				],
+				"tags": [],
+				"type": "scenario"
+			},
+			{
+				"description": "",
+				"id": "inventory;a-product-contains-a-number-of-elements",
+				"keyword": "Scenario",
+				"line": 11,
+				"name": "A product contains a number of elements",
+				"steps": [
+					{
+						"keyword": "Before",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 390000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Given ",
+						"line": 12,
+						"name": "I am browsing the inventory",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:10"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 1595000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "When ",
+						"line": 13,
+						"name": "I look at product number 3",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:20"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 0
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Then ",
+						"line": 14,
+						"name": "I can see a title, picture, description, price and a buy button",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:45"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 40000000
+						}
+					},
+					{
+						"keyword": "After",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 41000000
+						}
+					}
+				],
+				"tags": [],
+				"type": "scenario"
+			},
+			{
+				"description": "",
+				"id": "inventory;the-inventory-can-be-sorted",
+				"keyword": "Scenario",
+				"line": 22,
+				"name": "The inventory can be sorted",
+				"steps": [
+					{
+						"keyword": "Before",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 424000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Given ",
+						"line": 23,
+						"name": "I am browsing the inventory",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:10"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 1422000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "When ",
+						"line": 24,
+						"name": "I sort the products based on price \"lohi\"",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:25"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 40000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Then ",
+						"line": 25,
+						"name": "I can see the products sorted based on the price \"lohi\"",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:58"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 23000000
+						}
+					},
+					{
+						"keyword": "After",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 48000000
+						}
+					}
+				],
+				"tags": [],
+				"type": "scenario"
+			},
+			{
+				"description": "",
+				"id": "inventory;the-inventory-can-be-sorted",
+				"keyword": "Scenario",
+				"line": 22,
+				"name": "The inventory can be sorted",
+				"steps": [
+					{
+						"keyword": "Before",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 390000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Given ",
+						"line": 23,
+						"name": "I am browsing the inventory",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:10"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 1428000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "When ",
+						"line": 24,
+						"name": "I sort the products based on price \"hilo\"",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:25"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 44000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Then ",
+						"line": 25,
+						"name": "I can see the products sorted based on the price \"hilo\"",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:58"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 23000000
+						}
+					},
+					{
+						"keyword": "After",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 52000000
+						}
+					}
+				],
+				"tags": [],
+				"type": "scenario"
+			},
+			{
+				"description": "",
+				"id": "inventory;the-inventory-can-be-sorted",
+				"keyword": "Scenario",
+				"line": 22,
+				"name": "The inventory can be sorted",
+				"steps": [
+					{
+						"keyword": "Before",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 454000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Given ",
+						"line": 23,
+						"name": "I am browsing the inventory",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:10"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 1609000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "When ",
+						"line": 24,
+						"name": "I sort the products based on price \"az\"",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:25"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 41000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Then ",
+						"line": 25,
+						"name": "I can see the products sorted based on the price \"az\"",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:58"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 19000000
+						}
+					},
+					{
+						"keyword": "After",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 41000000
+						}
+					}
+				],
+				"tags": [],
+				"type": "scenario"
+			},
+			{
+				"description": "",
+				"id": "inventory;the-inventory-can-be-sorted",
+				"keyword": "Scenario",
+				"line": 22,
+				"name": "The inventory can be sorted",
+				"steps": [
+					{
+						"keyword": "Before",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 533000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Given ",
+						"line": 23,
+						"name": "I am browsing the inventory",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:10"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 1552000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "When ",
+						"line": 24,
+						"name": "I sort the products based on price \"za\"",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:25"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 38000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Then ",
+						"line": 25,
+						"name": "I can see the products sorted based on the price \"za\"",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:58"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 31000000
+						}
+					},
+					{
+						"keyword": "After",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 48000000
+						}
+					}
+				],
+				"tags": [],
+				"type": "scenario"
+			},
+			{
+				"description": "",
+				"id": "inventory;item-can-be-bought-from-the-inventory-overview",
+				"keyword": "Scenario",
+				"line": 34,
+				"name": "Item can be bought from the inventory overview",
+				"steps": [
+					{
+						"keyword": "Before",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 461000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Given ",
+						"line": 35,
+						"name": "I am browsing the inventory",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:10"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 1560000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "When ",
+						"line": 36,
+						"name": "I click on Add to Cart for product \"Sauce Labs Backpack\"",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:33"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 74000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Then ",
+						"line": 37,
+						"name": "I can see that product in my cart",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:66"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 61000000
+						}
+					},
+					{
+						"keyword": "After",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 50000000
+						}
+					}
+				],
+				"tags": [],
+				"type": "scenario"
+			},
+			{
+				"description": "",
+				"id": "inventory;item-cannot-be-added-to-the-cart-more-than-once",
+				"keyword": "Scenario",
+				"line": 43,
+				"name": "Item cannot be added to the cart more than once",
+				"steps": [
+					{
+						"keyword": "Before",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 443000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Given ",
+						"line": 44,
+						"name": "I am browsing the inventory",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:10"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 1513000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "When ",
+						"line": 45,
+						"name": "I click on Add to Cart for product \"Sauce Labs Backpack\"",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:33"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 80000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Then ",
+						"line": 46,
+						"name": "I cannot add product \"Sauce Labs Backpack\" again",
+						"match": {
+							"location": "step-definitions\\inventory-step.js:71"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 8000000
+						}
+					},
+					{
+						"keyword": "After",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 52000000
+						}
+					}
+				],
+				"tags": [],
+				"type": "scenario"
+			}
+		],
+		"id": "inventory",
+		"line": 1,
+		"keyword": "Feature",
+		"name": "Inventory",
+		"tags": [],
+		"uri": "features\\inventory.feature"
+	},
+	{
+		"description": "    As a user\n    I want to login into application",
+		"elements": [
+			{
+				"description": "",
+				"id": "login;login-with-valid-credentials",
+				"keyword": "Scenario",
+				"line": 6,
+				"name": "Login with valid credentials",
+				"steps": [
+					{
+						"keyword": "Before",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 474000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Given ",
+						"line": 7,
+						"name": "I visit a login page",
+						"match": {
+							"location": "step-definitions\\login-step.js:6"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 1315000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "When ",
+						"line": 8,
+						"name": "I fill the login form with valid credentials",
+						"match": {
+							"location": "step-definitions\\login-step.js:16"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 260000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Then ",
+						"line": 9,
+						"name": "I should see the home page",
+						"match": {
+							"location": "step-definitions\\login-step.js:31"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 34000000
+						}
+					},
+					{
+						"keyword": "After",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 66000000
+						}
+					}
+				],
+				"tags": [],
+				"type": "scenario"
+			},
+			{
+				"description": "",
+				"id": "login;attempt-login-with-a-locked-out-user",
+				"keyword": "Scenario",
+				"line": 11,
+				"name": "Attempt login with a locked out user",
+				"steps": [
+					{
+						"keyword": "Before",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 437000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Given ",
+						"line": 12,
+						"name": "I visit a login page",
+						"match": {
+							"location": "step-definitions\\login-step.js:6"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 1325000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "When ",
+						"line": 13,
+						"name": "I fill the login form with a locked-out user",
+						"match": {
+							"location": "step-definitions\\login-step.js:20"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 210000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Then ",
+						"line": 14,
+						"name": "I should see a locked-out error message",
+						"match": {
+							"location": "step-definitions\\login-step.js:39"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 5000000
+						}
+					},
+					{
+						"keyword": "After",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 52000000
+						}
+					}
+				],
+				"tags": [],
+				"type": "scenario"
+			},
+			{
+				"description": "",
+				"id": "login;try-to-login-with-invalid-credentials",
+				"keyword": "Scenario",
+				"line": 16,
+				"name": "Try to login with invalid credentials",
+				"steps": [
+					{
+						"keyword": "Before",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 451000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Given ",
+						"line": 17,
+						"name": "I visit a login page",
+						"match": {
+							"location": "step-definitions\\login-step.js:6"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 1313000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "When ",
+						"line": 18,
+						"name": "I fill the login form with \"user\" and \"secret_sauce\"",
+						"match": {
+							"location": "step-definitions\\login-step.js:24"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 175000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Then ",
+						"line": 19,
+						"name": "I should see an invalid credentials error message",
+						"match": {
+							"location": "step-definitions\\login-step.js:35"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 4000000
+						}
+					},
+					{
+						"keyword": "After",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 47000000
+						}
+					}
+				],
+				"tags": [],
+				"type": "scenario"
+			},
+			{
+				"description": "",
+				"id": "login;try-to-login-with-invalid-credentials",
+				"keyword": "Scenario",
+				"line": 16,
+				"name": "Try to login with invalid credentials",
+				"steps": [
+					{
+						"keyword": "Before",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 447000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Given ",
+						"line": 17,
+						"name": "I visit a login page",
+						"match": {
+							"location": "step-definitions\\login-step.js:6"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 1453000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "When ",
+						"line": 18,
+						"name": "I fill the login form with \"standard_user\" and \"psst\"",
+						"match": {
+							"location": "step-definitions\\login-step.js:24"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 190000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Then ",
+						"line": 19,
+						"name": "I should see an invalid credentials error message",
+						"match": {
+							"location": "step-definitions\\login-step.js:35"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 4000000
+						}
+					},
+					{
+						"keyword": "After",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 48000000
+						}
+					}
+				],
+				"tags": [],
+				"type": "scenario"
+			},
+			{
+				"description": "",
+				"id": "login;try-to-login-with-invalid-credentials",
+				"keyword": "Scenario",
+				"line": 16,
+				"name": "Try to login with invalid credentials",
+				"steps": [
+					{
+						"keyword": "Before",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 516000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Given ",
+						"line": 17,
+						"name": "I visit a login page",
+						"match": {
+							"location": "step-definitions\\login-step.js:6"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 1300000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "When ",
+						"line": 18,
+						"name": "I fill the login form with \"fjklqfjq\" and \"jfkldqjfqdl\"",
+						"match": {
+							"location": "step-definitions\\login-step.js:24"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 167000000
+						}
+					},
+					{
+						"arguments": [],
+						"keyword": "Then ",
+						"line": 19,
+						"name": "I should see an invalid credentials error message",
+						"match": {
+							"location": "step-definitions\\login-step.js:35"
+						},
+						"result": {
+							"status": "passed",
+							"duration": 4000000
+						}
+					},
+					{
+						"keyword": "After",
+						"hidden": true,
+						"result": {
+							"status": "passed",
+							"duration": 50000000
+						}
+					}
+				],
+				"tags": [],
+				"type": "scenario"
+			}
+		],
+		"id": "login",
+		"line": 1,
+		"keyword": "Feature",
+		"name": "Login",
+		"tags": [],
+		"uri": "features\\login.feature"
+	}
 ]

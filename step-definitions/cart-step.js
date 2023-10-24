@@ -29,7 +29,7 @@ Then(
 );
 
 Then("I can update the quantity of product {string}", async function (str) {
-	await cartPage.updateQty("2");
+	await cartPage.updateQty("1");
 });
 
 Then("{string} product is in my cart", async function (productName) {

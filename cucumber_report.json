@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 178000000
+              "duration": 302000000
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 7,
             "name": "I am browsing the inventory",
             "match": {
-              "location": "step-definitions\\inventory-step.js:10"
+              "location": "step-definitions/inventory-step.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 3872000000
+              "duration": 751000000
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 8,
             "name": "I click on the cart",
             "match": {
-              "location": "step-definitions\\inventory-step.js:41"
+              "location": "step-definitions/inventory-step.js:41"
             },
             "result": {
               "status": "passed",
-              "duration": 46000000
+              "duration": 29000000
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 9,
             "name": "I see that there are no items in my cart",
             "match": {
-              "location": "step-definitions\\cart-step.js:20"
+              "location": "step-definitions/cart-step.js:20"
             },
             "result": {
               "status": "passed",
-              "duration": 15000000
+              "duration": 5000000
             }
           },
           {
@@ -61,7 +61,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 29000000
             }
           }
         ],
@@ -80,7 +80,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 147000000
+              "duration": 117000000
             }
           },
           {
@@ -89,11 +89,11 @@
             "line": 12,
             "name": "I am browsing the inventory",
             "match": {
-              "location": "step-definitions\\inventory-step.js:10"
+              "location": "step-definitions/inventory-step.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 1305000000
+              "duration": 583000000
             }
           },
           {
@@ -102,11 +102,11 @@
             "line": 13,
             "name": "I click on Add to Cart for product \"Sauce Labs Backpack\"",
             "match": {
-              "location": "step-definitions\\inventory-step.js:33"
+              "location": "step-definitions/inventory-step.js:33"
             },
             "result": {
               "status": "passed",
-              "duration": 58000000
+              "duration": 35000000
             }
           },
           {
@@ -115,11 +115,11 @@
             "line": 14,
             "name": "I click on the cart",
             "match": {
-              "location": "step-definitions\\inventory-step.js:41"
+              "location": "step-definitions/inventory-step.js:41"
             },
             "result": {
               "status": "passed",
-              "duration": 47000000
+              "duration": 29000000
             }
           },
           {
@@ -128,11 +128,11 @@
             "line": 15,
             "name": "I can see a qty, title, description, price and a remove button",
             "match": {
-              "location": "step-definitions\\cart-step.js:24"
+              "location": "step-definitions/cart-step.js:24"
             },
             "result": {
               "status": "passed",
-              "duration": 16000000
+              "duration": 6000000
             }
           },
           {
@@ -140,7 +140,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 11000000
             }
           }
         ],
@@ -159,7 +159,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 156000000
+              "duration": 118000000
             }
           },
           {
@@ -168,11 +168,11 @@
             "line": 22,
             "name": "I am browsing the inventory",
             "match": {
-              "location": "step-definitions\\inventory-step.js:10"
+              "location": "step-definitions/inventory-step.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 1321000000
+              "duration": 558000000
             }
           },
           {
@@ -181,11 +181,11 @@
             "line": 23,
             "name": "I click on Add to Cart for product \"Sauce Labs Backpack\"",
             "match": {
-              "location": "step-definitions\\inventory-step.js:33"
+              "location": "step-definitions/inventory-step.js:33"
             },
             "result": {
               "status": "passed",
-              "duration": 79000000
+              "duration": 29000000
             }
           },
           {
@@ -194,11 +194,11 @@
             "line": 24,
             "name": "I click on the cart",
             "match": {
-              "location": "step-definitions\\inventory-step.js:41"
+              "location": "step-definitions/inventory-step.js:41"
             },
             "result": {
               "status": "passed",
-              "duration": 57000000
+              "duration": 25000000
             }
           },
           {
@@ -207,11 +207,12 @@
             "line": 25,
             "name": "I can update the quantity of product \"Sauce Labs Backpack\"",
             "match": {
-              "location": "step-definitions\\cart-step.js:31"
+              "location": "step-definitions/cart-step.js:31"
             },
             "result": {
-              "status": "passed",
-              "duration": 12000000
+              "status": "failed",
+              "duration": 5010000000,
+              "error_message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('div.cart_quantity')\nExpected string: \u001b[32m\"2\"\u001b[39m\nReceived string: \u001b[31m\"1\"\u001b[39m\nCall log:\n  \u001b[2m- locator._expect with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.cart_quantity')\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"cart_quantity\">1</div>\u001b[22m\n\u001b[2m  -   unexpected value \"1\"\u001b[22m\n\n    at Proxy.<anonymous> (/Users/jorenjanssens/Library/Mobile Documents/com~apple~CloudDocs/Werken/BIQ/Inspiration/playwright-cucumber/node_modules/playwright/lib/matchers/expect.js:173:37)\n    at CartPage.updateQty (/Users/jorenjanssens/Library/Mobile Documents/com~apple~CloudDocs/Werken/BIQ/Inspiration/playwright-cucumber/page-objects/cart-page.js:25:51)\n    at async World.<anonymous> (/Users/jorenjanssens/Library/Mobile Documents/com~apple~CloudDocs/Werken/BIQ/Inspiration/playwright-cucumber/step-definitions/cart-step.js:32:2)"
             }
           },
           {
@@ -219,7 +220,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 30000000
             }
           }
         ],
@@ -238,7 +239,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 165000000
+              "duration": 140000000
             }
           },
           {
@@ -247,11 +248,11 @@
             "line": 32,
             "name": "I log out with \"Sauce Labs Backpack\" in my cart",
             "match": {
-              "location": "step-definitions\\cart-step.js:12"
+              "location": "step-definitions/cart-step.js:12"
             },
             "result": {
               "status": "passed",
-              "duration": 1943000000
+              "duration": 1169000000
             }
           },
           {
@@ -260,11 +261,11 @@
             "line": 33,
             "name": "I log in",
             "match": {
-              "location": "step-definitions\\login-step.js:11"
+              "location": "step-definitions/login-step.js:11"
             },
             "result": {
               "status": "passed",
-              "duration": 257000000
+              "duration": 93000000
             }
           },
           {
@@ -273,11 +274,11 @@
             "line": 34,
             "name": "I click on the cart",
             "match": {
-              "location": "step-definitions\\inventory-step.js:41"
+              "location": "step-definitions/inventory-step.js:41"
             },
             "result": {
               "status": "passed",
-              "duration": 50000000
+              "duration": 25000000
             }
           },
           {
@@ -286,11 +287,11 @@
             "line": 35,
             "name": "\"Sauce Labs Backpack\" product is in my cart",
             "match": {
-              "location": "step-definitions\\cart-step.js:35"
+              "location": "step-definitions/cart-step.js:35"
             },
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 2000000
             }
           },
           {
@@ -298,7 +299,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 21000000
             }
           }
         ],
@@ -311,7 +312,7 @@
     "keyword": "Feature",
     "name": "Cart",
     "tags": [],
-    "uri": "features\\cart.feature"
+    "uri": "features/cart.feature"
   },
   {
     "description": "    As a logged in user\n    I want to browse the different products in the inventory",
@@ -328,7 +329,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 136000000
+              "duration": 114000000
             }
           },
           {
@@ -337,11 +338,11 @@
             "line": 7,
             "name": "I visit a login page",
             "match": {
-              "location": "step-definitions\\login-step.js:6"
+              "location": "step-definitions/login-step.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 1075000000
+              "duration": 462000000
             }
           },
           {
@@ -350,11 +351,11 @@
             "line": 8,
             "name": "I fill the login form with valid credentials",
             "match": {
-              "location": "step-definitions\\login-step.js:16"
+              "location": "step-definitions/login-step.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 229000000
+              "duration": 123000000
             }
           },
           {
@@ -363,11 +364,11 @@
             "line": 9,
             "name": "I can browse the inventory of products",
             "match": {
-              "location": "step-definitions\\inventory-step.js:54"
+              "location": "step-definitions/inventory-step.js:54"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -375,7 +376,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 13000000
             }
           }
         ],
@@ -394,7 +395,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 125000000
+              "duration": 118000000
             }
           },
           {
@@ -403,11 +404,11 @@
             "line": 12,
             "name": "I am browsing the inventory",
             "match": {
-              "location": "step-definitions\\inventory-step.js:10"
+              "location": "step-definitions/inventory-step.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 1308000000
+              "duration": 539000000
             }
           },
           {
@@ -416,7 +417,73 @@
             "line": 13,
             "name": "I look at product number 1",
             "match": {
-              "location": "step-definitions\\inventory-step.js:20"
+              "location": "step-definitions/inventory-step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I can see a title, picture, description, price and a buy button",
+            "match": {
+              "location": "step-definitions/inventory-step.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 114000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "inventory;a-product-contains-a-number-of-elements",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "A product contains a number of elements",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 121000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I am browsing the inventory",
+            "match": {
+              "location": "step-definitions/inventory-step.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 594000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I look at product number 2",
+            "match": {
+              "location": "step-definitions/inventory-step.js:20"
             },
             "result": {
               "status": "passed",
@@ -429,11 +496,77 @@
             "line": 14,
             "name": "I can see a title, picture, description, price and a buy button",
             "match": {
-              "location": "step-definitions\\inventory-step.js:45"
+              "location": "step-definitions/inventory-step.js:45"
             },
             "result": {
               "status": "passed",
-              "duration": 33000000
+              "duration": 112000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "inventory;a-product-contains-a-number-of-elements",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "A product contains a number of elements",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 115000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I am browsing the inventory",
+            "match": {
+              "location": "step-definitions/inventory-step.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 577000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I look at product number 3",
+            "match": {
+              "location": "step-definitions/inventory-step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I can see a title, picture, description, price and a buy button",
+            "match": {
+              "location": "step-definitions/inventory-step.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 112000000
             }
           },
           {
@@ -450,138 +583,6 @@
       },
       {
         "description": "",
-        "id": "inventory;a-product-contains-a-number-of-elements",
-        "keyword": "Scenario",
-        "line": 11,
-        "name": "A product contains a number of elements",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 170000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 12,
-            "name": "I am browsing the inventory",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1320000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 13,
-            "name": "I look at product number 2",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:20"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "I can see a title, picture, description, price and a buy button",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:45"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 20000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 6000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "inventory;a-product-contains-a-number-of-elements",
-        "keyword": "Scenario",
-        "line": 11,
-        "name": "A product contains a number of elements",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 152000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 12,
-            "name": "I am browsing the inventory",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1317000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 13,
-            "name": "I look at product number 3",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:20"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "I can see a title, picture, description, price and a buy button",
-            "match": {
-              "location": "step-definitions\\inventory-step.js:45"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 21000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 7000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
         "id": "inventory;the-inventory-can-be-sorted",
         "keyword": "Scenario",
         "line": 22,
@@ -592,7 +593,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 154000000
+              "duration": 119000000
             }
           },
           {
@@ -601,11 +602,11 @@
             "line": 23,
             "name": "I am browsing the inventory",
             "match": {
-              "location": "step-definitions\\inventory-step.js:10"
+              "location": "step-definitions/inventory-step.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 1318000000
+              "duration": 611000000
             }
           },
           {
@@ -614,11 +615,11 @@
             "line": 24,
             "name": "I sort the products based on price \"lohi\"",
             "match": {
-              "location": "step-definitions\\inventory-step.js:25"
+              "location": "step-definitions/inventory-step.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 29000000
+              "duration": 10000000
             }
           },
           {
@@ -627,11 +628,11 @@
             "line": 25,
             "name": "I can see the products sorted based on the price \"lohi\"",
             "match": {
-              "location": "step-definitions\\inventory-step.js:58"
+              "location": "step-definitions/inventory-step.js:58"
             },
             "result": {
               "status": "passed",
-              "duration": 18000000
+              "duration": 5000000
             }
           },
           {
@@ -639,7 +640,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 13000000
             }
           }
         ],
@@ -658,7 +659,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 140000000
+              "duration": 127000000
             }
           },
           {
@@ -667,11 +668,11 @@
             "line": 23,
             "name": "I am browsing the inventory",
             "match": {
-              "location": "step-definitions\\inventory-step.js:10"
+              "location": "step-definitions/inventory-step.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 1301000000
+              "duration": 583000000
             }
           },
           {
@@ -680,11 +681,11 @@
             "line": 24,
             "name": "I sort the products based on price \"hilo\"",
             "match": {
-              "location": "step-definitions\\inventory-step.js:25"
+              "location": "step-definitions/inventory-step.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 25000000
+              "duration": 12000000
             }
           },
           {
@@ -693,11 +694,11 @@
             "line": 25,
             "name": "I can see the products sorted based on the price \"hilo\"",
             "match": {
-              "location": "step-definitions\\inventory-step.js:58"
+              "location": "step-definitions/inventory-step.js:58"
             },
             "result": {
               "status": "passed",
-              "duration": 18000000
+              "duration": 23000000
             }
           },
           {
@@ -705,7 +706,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 18000000
             }
           }
         ],
@@ -724,7 +725,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 130000000
+              "duration": 129000000
             }
           },
           {
@@ -733,11 +734,11 @@
             "line": 23,
             "name": "I am browsing the inventory",
             "match": {
-              "location": "step-definitions\\inventory-step.js:10"
+              "location": "step-definitions/inventory-step.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 1302000000
+              "duration": 638000000
             }
           },
           {
@@ -746,11 +747,11 @@
             "line": 24,
             "name": "I sort the products based on price \"az\"",
             "match": {
-              "location": "step-definitions\\inventory-step.js:25"
+              "location": "step-definitions/inventory-step.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 11000000
             }
           },
           {
@@ -759,11 +760,11 @@
             "line": 25,
             "name": "I can see the products sorted based on the price \"az\"",
             "match": {
-              "location": "step-definitions\\inventory-step.js:58"
+              "location": "step-definitions/inventory-step.js:58"
             },
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 5000000
             }
           },
           {
@@ -771,7 +772,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 14000000
             }
           }
         ],
@@ -790,7 +791,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 130000000
+              "duration": 117000000
             }
           },
           {
@@ -799,11 +800,11 @@
             "line": 23,
             "name": "I am browsing the inventory",
             "match": {
-              "location": "step-definitions\\inventory-step.js:10"
+              "location": "step-definitions/inventory-step.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 1291000000
+              "duration": 602000000
             }
           },
           {
@@ -812,11 +813,11 @@
             "line": 24,
             "name": "I sort the products based on price \"za\"",
             "match": {
-              "location": "step-definitions\\inventory-step.js:25"
+              "location": "step-definitions/inventory-step.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 25000000
+              "duration": 13000000
             }
           },
           {
@@ -825,11 +826,11 @@
             "line": 25,
             "name": "I can see the products sorted based on the price \"za\"",
             "match": {
-              "location": "step-definitions\\inventory-step.js:58"
+              "location": "step-definitions/inventory-step.js:58"
             },
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 12000000
             }
           },
           {
@@ -837,7 +838,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 15000000
             }
           }
         ],
@@ -856,7 +857,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 130000000
+              "duration": 123000000
             }
           },
           {
@@ -865,11 +866,11 @@
             "line": 35,
             "name": "I am browsing the inventory",
             "match": {
-              "location": "step-definitions\\inventory-step.js:10"
+              "location": "step-definitions/inventory-step.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 1322000000
+              "duration": 574000000
             }
           },
           {
@@ -878,11 +879,11 @@
             "line": 36,
             "name": "I click on Add to Cart for product \"Sauce Labs Backpack\"",
             "match": {
-              "location": "step-definitions\\inventory-step.js:33"
+              "location": "step-definitions/inventory-step.js:33"
             },
             "result": {
               "status": "passed",
-              "duration": 68000000
+              "duration": 31000000
             }
           },
           {
@@ -891,11 +892,11 @@
             "line": 37,
             "name": "I can see that product in my cart",
             "match": {
-              "location": "step-definitions\\inventory-step.js:66"
+              "location": "step-definitions/inventory-step.js:66"
             },
             "result": {
               "status": "passed",
-              "duration": 62000000
+              "duration": 28000000
             }
           },
           {
@@ -903,7 +904,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 26000000
             }
           }
         ],
@@ -922,7 +923,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 131000000
+              "duration": 176000000
             }
           },
           {
@@ -931,11 +932,11 @@
             "line": 44,
             "name": "I am browsing the inventory",
             "match": {
-              "location": "step-definitions\\inventory-step.js:10"
+              "location": "step-definitions/inventory-step.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 1317000000
+              "duration": 570000000
             }
           },
           {
@@ -944,11 +945,11 @@
             "line": 45,
             "name": "I click on Add to Cart for product \"Sauce Labs Backpack\"",
             "match": {
-              "location": "step-definitions\\inventory-step.js:33"
+              "location": "step-definitions/inventory-step.js:33"
             },
             "result": {
               "status": "passed",
-              "duration": 50000000
+              "duration": 28000000
             }
           },
           {
@@ -957,11 +958,11 @@
             "line": 46,
             "name": "I cannot add product \"Sauce Labs Backpack\" again",
             "match": {
-              "location": "step-definitions\\inventory-step.js:71"
+              "location": "step-definitions/inventory-step.js:71"
             },
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 2000000
             }
           },
           {
@@ -969,7 +970,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 11000000
             }
           }
         ],
@@ -982,7 +983,7 @@
     "keyword": "Feature",
     "name": "Inventory",
     "tags": [],
-    "uri": "features\\inventory.feature"
+    "uri": "features/inventory.feature"
   },
   {
     "description": "    As a user\n    I want to login into application",
@@ -999,7 +1000,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 144000000
+              "duration": 118000000
             }
           },
           {
@@ -1008,11 +1009,11 @@
             "line": 7,
             "name": "I visit a login page",
             "match": {
-              "location": "step-definitions\\login-step.js:6"
+              "location": "step-definitions/login-step.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 1080000000
+              "duration": 430000000
             }
           },
           {
@@ -1021,11 +1022,11 @@
             "line": 8,
             "name": "I fill the login form with valid credentials",
             "match": {
-              "location": "step-definitions\\login-step.js:16"
+              "location": "step-definitions/login-step.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 211000000
+              "duration": 122000000
             }
           },
           {
@@ -1034,11 +1035,11 @@
             "line": 9,
             "name": "I should see the home page",
             "match": {
-              "location": "step-definitions\\login-step.js:31"
+              "location": "step-definitions/login-step.js:31"
             },
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 4000000
             }
           },
           {
@@ -1046,7 +1047,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 17000000
             }
           }
         ],
@@ -1065,7 +1066,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 129000000
+              "duration": 178000000
             }
           },
           {
@@ -1074,11 +1075,11 @@
             "line": 12,
             "name": "I visit a login page",
             "match": {
-              "location": "step-definitions\\login-step.js:6"
+              "location": "step-definitions/login-step.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 1096000000
+              "duration": 510000000
             }
           },
           {
@@ -1087,11 +1088,11 @@
             "line": 13,
             "name": "I fill the login form with a locked-out user",
             "match": {
-              "location": "step-definitions\\login-step.js:20"
+              "location": "step-definitions/login-step.js:20"
             },
             "result": {
               "status": "passed",
-              "duration": 170000000
+              "duration": 111000000
             }
           },
           {
@@ -1100,11 +1101,11 @@
             "line": 14,
             "name": "I should see a locked-out error message",
             "match": {
-              "location": "step-definitions\\login-step.js:39"
+              "location": "step-definitions/login-step.js:39"
             },
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 1000000
             }
           },
           {
@@ -1112,7 +1113,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 13000000
             }
           }
         ],
@@ -1131,7 +1132,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 134000000
+              "duration": 180000000
             }
           },
           {
@@ -1140,11 +1141,11 @@
             "line": 17,
             "name": "I visit a login page",
             "match": {
-              "location": "step-definitions\\login-step.js:6"
+              "location": "step-definitions/login-step.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 1074000000
+              "duration": 486000000
             }
           },
           {
@@ -1153,11 +1154,11 @@
             "line": 18,
             "name": "I fill the login form with \"user\" and \"secret_sauce\"",
             "match": {
-              "location": "step-definitions\\login-step.js:24"
+              "location": "step-definitions/login-step.js:24"
             },
             "result": {
               "status": "passed",
-              "duration": 171000000
+              "duration": 121000000
             }
           },
           {
@@ -1166,11 +1167,11 @@
             "line": 19,
             "name": "I should see an invalid credentials error message",
             "match": {
-              "location": "step-definitions\\login-step.js:35"
+              "location": "step-definitions/login-step.js:35"
             },
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 2000000
             }
           },
           {
@@ -1178,7 +1179,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 15000000
             }
           }
         ],
@@ -1197,7 +1198,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 126000000
+              "duration": 123000000
             }
           },
           {
@@ -1206,11 +1207,11 @@
             "line": 17,
             "name": "I visit a login page",
             "match": {
-              "location": "step-definitions\\login-step.js:6"
+              "location": "step-definitions/login-step.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 1076000000
+              "duration": 466000000
             }
           },
           {
@@ -1219,11 +1220,11 @@
             "line": 18,
             "name": "I fill the login form with \"standard_user\" and \"psst\"",
             "match": {
-              "location": "step-definitions\\login-step.js:24"
+              "location": "step-definitions/login-step.js:24"
             },
             "result": {
               "status": "passed",
-              "duration": 145000000
+              "duration": 99000000
             }
           },
           {
@@ -1232,11 +1233,11 @@
             "line": 19,
             "name": "I should see an invalid credentials error message",
             "match": {
-              "location": "step-definitions\\login-step.js:35"
+              "location": "step-definitions/login-step.js:35"
             },
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 2000000
             }
           },
           {
@@ -1244,7 +1245,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 15000000
             }
           }
         ],
@@ -1263,7 +1264,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 157000000
+              "duration": 119000000
             }
           },
           {
@@ -1272,11 +1273,11 @@
             "line": 17,
             "name": "I visit a login page",
             "match": {
-              "location": "step-definitions\\login-step.js:6"
+              "location": "step-definitions/login-step.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 1110000000
+              "duration": 456000000
             }
           },
           {
@@ -1285,11 +1286,11 @@
             "line": 18,
             "name": "I fill the login form with \"fjklqfjq\" and \"jfkldqjfqdl\"",
             "match": {
-              "location": "step-definitions\\login-step.js:24"
+              "location": "step-definitions/login-step.js:24"
             },
             "result": {
               "status": "passed",
-              "duration": 155000000
+              "duration": 119000000
             }
           },
           {
@@ -1298,11 +1299,11 @@
             "line": 19,
             "name": "I should see an invalid credentials error message",
             "match": {
-              "location": "step-definitions\\login-step.js:35"
+              "location": "step-definitions/login-step.js:35"
             },
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 1000000
             }
           },
           {
@@ -1310,7 +1311,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 15000000
             }
           }
         ],
@@ -1323,6 +1324,6 @@
     "keyword": "Feature",
     "name": "Login",
     "tags": [],
-    "uri": "features\\login.feature"
+    "uri": "features/login.feature"
   }
 ]

@@ -10,7 +10,7 @@ const {
 BeforeAll(async () => {
 	console.log("Launch browser");
 	global.browser = await playwright["chromium"].launch({
-		headless: false,
+		headless: true,
 		slowMo: 0,
 	});
 });

@@ -4,6 +4,7 @@ on:
       branches: [main, master]
    pull_request:
       branches: [main, master]
+   workflow_dispatch:
 jobs:
    UI_Test_Execution:
       timeout-minutes: 60
